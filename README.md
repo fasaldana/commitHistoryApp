@@ -1,8 +1,33 @@
-# React + Vite
+## Description
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application that shows the GitHub commit history for this public repository
 
-Currently, two official plugins are available:
+See the [Backend version](https://github.com/fasaldana/commitHistoryApp_backend)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+
+>To get a local copy follow these steps in your local machine terminal:
+> - `https://github.com/fasaldana/commitHistoryApp.git`
+> - `cd commitHistoryApp`
+
+```bash
+$ npm install
+```
+
+## Running the app
+
+```bash
+# development
+$ npm run dev
+```
+
+## Author
+
+👤 **Fernando Saldaña**
+
+- GitHub: [@fasaldana](https://github.com/fasaldana)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fernando-saldana-8bbb89228/)
+
+## License
+
+Nest is [MIT licensed](https://github.com/fasaldana/commitHistoryApp_backend/blob/dev/MIT.md).
