@@ -10,12 +10,11 @@ const GitHistory = (props) => {
       .get(`http://localhost:3000/commit-history-back/${repoName}`)
       .then((response) => {
         setExampleData(response.data);
-        console.log(response.data);
       })
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [repoName]);
 
   return (
     <table className="table">

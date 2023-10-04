@@ -7,8 +7,8 @@ function App() {
     <div className="app">
       <Nabvar />
       <div className="container">
-        <GitHistory />
-        <GitHistory />
+        <GitHistory repoName="commitHistoryApp" />
+        <GitHistory repoName="commitHistoryApp_backend" />
       </div>
     </div>
   );
