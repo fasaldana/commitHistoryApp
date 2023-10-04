@@ -21,28 +21,30 @@ const GitHistory = (props) => {
       <div className="title">
         <h3>Commit History for {repoName}</h3>
       </div>
-      <table className="table">
-        <thead>
-          <tr>
-            <th>SHA</th>
-            <th>Author</th>
-            <th>Date</th>
-            <th>Message</th>
-          </tr>
-        </thead>
-        <tbody>
-          {exampleData.map((data) => {
-            return (
-              <tr key={data.sha}>
-                <td>{data.sha}</td>
-                <td>{data.author}</td>
-                <td>{data.date}</td>
-                <td>{data.message}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+      <div style={{ overflowX: "auto" }}>
+        <table className="table">
+          <thead>
+            <tr>
+              <th>SHA</th>
+              <th>Author</th>
+              <th>Date</th>
+              <th>Message</th>
+            </tr>
+          </thead>
+          <tbody>
+            {exampleData.map((data) => {
+              return (
+                <tr key={data.sha}>
+                  <td>{data.sha}</td>
+                  <td>{data.author}</td>
+                  <td>{data.date}</td>
+                  <td>{data.message}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
