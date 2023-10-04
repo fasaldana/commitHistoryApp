@@ -1,12 +1,13 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 
-const GitHistory = () => {
+const GitHistory = (props) => {
   const [exampleData, setExampleData] = useState([]);
-
+  const { repoName } = props;
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/commit-history-back`)
+      .get(`http://localhost:3000/commit-history-back/${repoName}`)
       .then((response) => {
         setExampleData(response.data);
         console.log(response.data);
@@ -40,6 +41,10 @@ const GitHistory = () => {
       </tbody>
     </table>
   );
+};
+
+GitHistory.propTypes = {
+  repoName: PropTypes.string.isRequired,
 };
 
 export default GitHistory;
